@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Doctype för HTML5 används. Detta innebär att den striktare syntaxen för t.ex XML ej behöver följas i dokumentet (även om man kan göra det med XHTML). En Doctype används för att kunna verifirea vilken version av HTML som dokumentet följer.
+HTML5 har ingen DTD som behöver refereras till, och därför ser DOCTYPE-deklarationen mycket enklare ut än för de andra versionerna av html. Vi använder HTML5 i uppgiftern eftersom det har bra stöd för t.ex  API:s med audio och video kontroll,
+samt att det finns en hel del nya globala attribut som kan användas för att förenkla funktionaliteten  för användare med funktionsnedsättningar (bla. de som kategoriseras under namnet Accessible Rich Internet Applications, ARIA).-->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link href="CSS/design.css" media="screen" rel="stylesheet" type=
+    "text/css">
+    <!-- <link rel="stylesheet" href="CSS/design_print.css" type="text/css" media="print"/> -->
+    <title>Miljöboven</title>
+    <meta content="width = device-width, initial-scale = 1, maximum-scale=2"
+    name="viewport">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img alt="kommunens logga" height="82" id="logo" src=
+            "Images/Icons/logo.png" width="64"> Startsida</h1>
+        </header>
+        <nav>
+            <ul id="links">
+                <li class="link">
+                    <a href="HTML/Tj%C3%A4nster.html" tabindex="0">Tjänster</a>
+                </li>
+                <li class="link">
+                    <a href="HTML/FAQ.html" tabindex="1">FAQ</a>
+                </li>
+                <li class="link">
+                    <a href="HTML/Kontakt.html" tabindex="2">Kontakt</a>
+                </li>
+                <li class="link">
+                    <a href="HTML/Inloggning.html" tabindex="3">Inloggning</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <h2>Rapportering av miljöbrott</h2>
+            <p>Vi som tar hand om kommunen Småstad är måna om vår miljö och
+            hälsa hos alla våra medborgare.<br>
+            Har du observerat ett brott mot miljön i kommunen nyligen?<br>
+            I så fall tar vi tacksamt emot en rapport av detta, vilket du gör
+            genom att fylla i formuläret nedan.</p><br>
+            <form action="some_url.asp" class="formular" method="post" target=
+            "_blank">
+                <h3>Obligatoriska fält markeras med *</h3>
+                <fieldset>
+                    <label for="Plats">* Brottsplats:</label> <input id="Plats"
+                    name="plats" placeholder="Var skedde brottet?" required=""
+                    tabindex="4" type="text"><br>
+                    <br>
+                    <label for="Typ">* Brottstyp:</label> <input id="Typ" name=
+                    "typ" placeholder="Vilken typ av brott?" tabindex="5" type=
+                    "text"><br>
+                    <br>
+                    <label>Personuppgifter:</label><br>
+                    <br>
+                    <label for="Namn">* Förnamn:</label> <input id="Namn" name=
+                    "namn" tabindex="6" type="text"><br>
+                    <br>
+                    <label for="Efternamn">* Efternamn:</label> <input id=
+                    "Efternamn" name="efternamn" tabindex="7" type="text"><br>
+                    <br>
+                    <label for="Tel">Telefon-nummer:</label> <input id="Tel"
+                    name="telefon" tabindex="8" type="tel"><br>
+                    <br>
+                    <label for="Email">Email-adress:</label> <input id="Email"
+                    name="email" pattern="\S+@\S+\.\S+" placeholder=
+                    "you@yourdomain.com" tabindex="9" type="email">
+                </fieldset><br>
+                <br>
+                <fieldset>
+                    <p>* Datum för brottet:<br>
+                    <input required="" tabindex="10" type="date"> 
+                    <!--<"The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill."--></p><br>
+
+                    <p>Frivillig brottsbeskrivning:</p>
+                    <textarea cols="35" name="Beskrivning" rows=
+                    "10">Beskriv hur brottet skedde, ev. misstankar och observationer här...</textarea>
+                </fieldset><br>
+                <br>
+                <fieldset>
+                    <input class="knapp" tabindex="12" type="submit" value=
+                    "Skicka Svar"> <input class="knapp" tabindex="13" type=
+                    "reset" value="Radera">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
