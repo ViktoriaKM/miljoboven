@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link href="../CSS/design.css" media="screen" rel="stylesheet" type=
+    "text/css">
+    <!-- <link rel="stylesheet" href="../CSS/design_print.css" type="text/css" media="print"/> -->
+    <title>Detaljsida</title>
+    <meta content="width = device-width, initial-scale = 1, maximum-scale=2"
+    name="viewport">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="../index.html"><img alt="kommunens logga" height="82"
+            id="logo" src="../Images/Icons/logo.png" title=
+            "Tillbaka till startsidan" width="64"></a> Detaljsida</h1>
+        </header>
+        <nav>
+            <h2>2016-45-0206</h2>
+            <ul id="links">
+                <li class="link">
+                    <a href="../index.html" tabindex="0">Hem</a>
+                </li>
+                <li class="link">
+                    <a href="Tj%C3%A4nster.html" tabindex="1">Tjänster</a>
+                </li>
+                <li class="link">
+                    <a href="FAQ.html" tabindex="2">FAQ</a>
+                </li>
+                <li class="link">
+                    <a href="Kontakt.html" tabindex="3">Kontakt</a>
+                </li>
+                <li class="link">
+                    <a href="Inloggning.html" tabindex="4">Inloggning</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <section id="anmalan">
+                <h3 class="intern-rubrik">Anmälan</h3>
+                <dl>
+                    <dt class="intern-rubrik">Typ av brott:</dt>
+                    <dd>Vandalisering</dd>
+                    <dt class="intern-rubrik">Brottsdatum:</dt>
+                    <dd>2016-05-04</dd>
+                    <dt class="intern-rubrik">Status:</dt>
+                    <dd>Inrapporterad</dd>
+                    <dt class="intern-rubrik">Avdelning:</dt>
+                    <dd>Tekniska</dd>
+                    <dt class="intern-rubrik">Handläggare:</dt>
+                    <dd>Maria Aydi</dd>
+                    <dt class="intern-rubrik">Anmälare:</dt>
+                    <dd>Bengt Cederström</dd>
+                    <dt class="intern-rubrik">Anmälarens telefon:</dt>
+                    <dd>+46 70 123 4566</dd>
+                    <dt class="intern-rubrik">Anmälarens email:</dt>
+                    <dd>Bengan55@dinmail.se</dd>
+                </dl>
+            </section>
+            <section id="utredning">
+                <h3 class="intern-rubrik">Utredning</h3>
+                <!-- detta ska kunna ändras utav handläggaren, alltså bör man använda formulär.-->
+                <h4 id="intern-rubrik">Obligatoriska fält markeras med *</h4>
+                <!-- styla texten röd-->
+                <form action="some_url.asp" method="get" target="_blank">
+                    <fieldset>
+                        <p>*Status:<br>
+                        <select name="brottstatus" required="" tabindex="5">
+                            <option value="">
+                                Inrapporterad
+                            </option>
+                            <option>
+                                Pågående
+                            </option>
+                            <option>
+                                Avslutad
+                            </option>
+                            <option>
+                                Bordlagd tillsvidare
+                            </option>
+                        </select></p><br>
+                        <br>
+                        <label tabindex="1">*Ansvarig Avdelning:</label><br>
+                        <input checked name="Avdelning" required="" type=
+                        "radio" value="Tekniska">Tekniska<br>
+                        <!-- räcker med att en radiobutton har attributet required-->
+                         <input checked name="Avdelning" type="radio" value=
+                        "Etiska">Interna<br>
+                        <input checked name="Avdelning" type="radio" value=
+                        "Sanitet">Allmänna<br>
+                        <br>
+                        <!-- radio buttons för olika avdelningar-->
+                         <label tabindex="2">*Handläggare:</label><br>
+                        <input checked name="Namn" required="" type="radio"
+                        value="Annelie Aydi">Maria Aydi<br>
+                        <input checked name="Namn" type="radio" value=
+                        "Natasha Brandt">Natasha Brandt<br>
+                        <input checked name="Namn" type="radio" value=
+                        "Calle Rejbrand">Calle Rejbrand<br>
+                    </fieldset><br>
+                    <fieldset>
+                        <p>Provtagning:</p><label>Välj en pdf-fil att ladda
+                        upp:<br>
+                        <input name="provtagning" tabindex="6" type=
+                        "file"></label><br>
+                        <input class="knapp" tabindex="7" type="submit" value=
+                        "submit"> <!--filuppladdning-->
+                        <p><label>Ytterligare information:<br>
+                        <textarea cols="50" name="kommentar" rows="5" tabindex=
+                        "8">Övriga kommentarer...</textarea></label></p><br>
+                        <p>Relaterade bilder:</p><label>Välj en bild att ladda
+                        upp:<br>
+                        <input name="bild" tabindex="9" type=
+                        "file"></label><br>
+                        <input class="knapp" tabindex="10" type="submit" value=
+                        "submit">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
