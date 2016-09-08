@@ -1,0 +1,533 @@
+@import  "https://fonts.googleapis.com/css?family=PT+Sans";
+
+@import  "https://fonts.googleapis.com/css?family=PT+Serif";
+
+/*Generella stilregler för samtliga sidor på sajten*/
+#wrapper {
+    background: url(../Images/Pictures/background1.png) center repeat-y fixed;
+}
+
+#content {
+    padding-top: 1em;
+}
+
+html {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom,#fff,#6B7F62);
+    background: linear-gradient(to bottom,#fff,#6B7F62);
+    background: linear-gradient(to bottom,#fff,#6B7F62);
+/*Helst ska PT-Serif användas, vilket jag skrev i Designspecifikationen, 
+    men om det inte finns på användarens dator så paras Times New Roman ihop med Arial som titel-font.*/
+    font: 100% "PT Serif","Times New Roman",Arial,serif;
+    color: #6B7F62;
+/*olivgrön*/
+}
+
+header,footer {
+    background-color: #c3bdb7;
+/*gråbrun*/
+    border: solid 2px #FF8677;
+/*ljusröd*/
+    border-radius: 1em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+    margin: 0 auto;
+}
+
+/*Textstorleken minskas för varje header för att skapa en logisk rubrikstruktur.*/
+header h1 {
+    font: bold 3em "PT Sans",Arial,sans-serif;
+    color: #015A01;
+/*smaragdgrön*/
+    text-shadow: 3px 3px 3px #6B7F62;
+/*olivgrön*/
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    font: 2em "PT Sans",Arial,sans-serif;
+    color: #015A01;
+}
+
+h3 {
+    font: 1.5em "PT Sans",Arial,sans-serif;
+    color: #015A01;
+}
+
+h4 {
+    font: 1.2em "PT Sans",Arial,sans-serif;
+    color: #015A01;
+}
+
+p {
+    font: italic .8em "PT Serif","Times New Roman",Arial,serif;
+    background-color: #fff;
+    line-height: 1.5;
+    margin: 1em;
+    padding: .5em;
+    border: solid 1px #015A01;
+    border-radius: .5em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+/*Klassen intern-rubrik används på ställen där vanliga rubrikelement är otillåtna.*/
+.intern-rubrik::first-letter {
+    font-weight: bolder;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th {
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+caption {
+    color: #015A01;
+    font: bold 2em "PT Sans",sans-serif;
+    background-color: #fff;
+    border: 2px solid #015A01;
+    border-radius: 1em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding: .2em;
+/*Eftersom vissa delar innehåller mycket text, blir det bra att använda lite större radavstånd för att förenkla läsningen.*/
+    line-height: 200%;
+}
+
+/*Mer matchande text i textfälten (än monospace-fonten som är default).*/
+textarea,input,select {
+    color: #6B7F62;
+    font-size: 80%;
+    font-family: "PT Serif",serif;
+/*Blir mer responsivt:*/
+    overflow: auto;
+    max-width: 10em;
+/*Stöds ej i Internet Explorer*/
+    resize: both;
+}
+
+form fieldset {
+    background-color: #c3bdb7;
+    color: #015A01;
+    border: solid 2px #FF8677;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 1.5em auto;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+article,aside,figure,section {
+    background-color: #fff;
+    width: 30%;
+    border: 2px solid #015A01;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 1em auto;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+/*Horisontell navigeringsmeny*/
+nav ul li {
+    display: inline;
+    margin: 1em auto;
+    padding: 5px;
+    font: bold 150%/140% "PT Sans",sans-serif;
+    width: 50%;
+    background-color: #fff;
+}
+
+/*Tar bort underline på länkarna.*/
+nav ul li a {
+    text-decoration: none;
+}
+
+/*Box med ram runt navigeringsmenyn*/
+nav ul#links {
+    background-color: #fff;
+    border: 2px solid #015A01;
+    border-radius: 1em;
+    padding: 1.5em;
+    width: 50%;
+    margin: 1em auto;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+/*Markerar vilken sida  man är på.*/
+nav ul li a#active {
+    color: #015A01;
+    border: 1px solid #CC7F4B;
+    border-radius: .5em;
+}
+
+/*Pseudoklassen link definieras först eftersosm den annars skulle överskrida andra psedoklasser.*/
+a:link {
+/*Länkarna som ej besökts har samma färg och typsnitt som rubrikerna, eftersom de också är en sorts rubriker till resp. sida.*/
+    color: #015A01;
+    font-family: "PT Sans",Arial,sans-serif;
+    padding: .2em;
+}
+
+a:visited {
+/*En subtilare färg används för de länkar som redan besökts.*/
+    color: #6B7F62;
+}
+
+a:focus,a:hover,a:active {
+/*Länkar som muspekaren förs över har samma färg som besökta länkar, 
+för att tydligt markera för användaren att det går att besöka dem. "hover" fungerar dock ej för mobila enheter. 
+Därför används också "active". "focus" andvänds för att användare som tabbar sig igenom dokumenten också ska få tillgång till samma funktionalitet.*/
+    color: #015A01;
+    background-color: #c3bdb7;
+    border-radius: .2em;
+}
+
+/*bilden av loggan tillhör en egen klass, och ska ha en ram runt sig, samt placeras längst till vänster. */
+img#logo {
+    float: left;
+    border: 2px solid #FF8677;
+    border-radius: .2em;
+    padding: .2em;
+    margin-bottom: 2em;
+}
+
+/*Informativa bilder t.ex kartor markeras med en ram runt.*/
+/*Det går också att zooma in på kartan om man hovrar med muspekaren över den (med CSS animationer).*/
+img.bild {
+    border: 1px solid #CC7F4B;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: border;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-property: border;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-property: border;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease-in-out;
+    transition-property: border;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+/*Zooma in på kartorna för att göra dem tydligare när användaren markerar dem.*/
+img#karta:hover,img#karta:focus {
+    transform: scale(1.2) translateY(20px);
+}
+
+img#karta {
+    transition: transform .3s linear;
+}
+
+.knapp {
+    color: #015A01;
+    background-color: #6B7F62;
+    padding: .5em;
+    margin: .5em;
+    border: solid 1px #CC7F4B;
+    border-radius: .5em;
+    font-weight: 700;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+    -webkit-transition-property: background-color,color,border;
+    -webkit-transition-duration: 0.1s,0.1s,.2s;
+    -webkit-transition-timing-function: ease-out,ease-out,ease-in-out;
+    -moz-transition-property: background-color,color,border;
+    -moz-transition-duration: 0.1s,0.1s,.2s;
+    -moz-transition-timing-function: ease-out,ease-out,ease-in-out;
+    -o-transition-property: background-color,color,border;
+    -o-transition-duration: 0.1s,0.1s,.2s;
+    -o-transition-timing-function: ease-out,ease-out,ease-in-out;
+    -ms-transition-property: background-color,color,border;
+    -ms-transition-duration: 0.1s,0.1s,.2s;
+    -ms-transition-timing-function: ease-out,ease-out,ease-in-out;
+    transition-property: background-color,color,border;
+    transition-duration: 0.1s,0.1s,.2s;
+    transition-timing-function: ease-out,ease-out,ease-in-out;
+}
+
+.knapp:hover,.knapp:active {
+    background-color: #c3bdb7;
+    color: #6B7F62;
+    border: solid 1px;
+}
+
+/*Mer specifika regler för resp. sida*/
+/*Tjänster*/
+/*Stil för fake-länkarna på tjänster-sidan, matchar markeringen för aktiv sida.*/
+nav ul#tjanster li {
+    border: 1px solid #CC7F4B;
+    border-radius: .5em;
+}
+
+/*Även samma hover-stil som länkarna på startsidan för att skapa igenkänning.*/
+nav ul#tjanster li:hover {
+    color: #015A01;
+    background-color: #c3bdb7;
+    border-radius: .2em;
+}
+
+/*FAQ*/
+/*Frågorna i definitionslistan ska ha en röd ram, medan svaren får en grön. 
+Margin används för att skapa luft mellan boxarna så att det blir mer lättläst.*/
+#content ul li {
+    margin: 3em;
+    display: block;
+}
+
+.fraga {
+    background-color: #fff;
+    font: bold 100%/140% "PT Sans",sans-serif;
+    border: 2px solid #FF8677;
+    border-radius: 1em;
+    padding: 1.5em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+.svar {
+    background-color: #fff;
+    font: 100%/140% "PT Sans",sans-serif;
+    border: 2px solid #015A01;
+    border-radius: 1em;
+    padding: 1.5em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+    display: block;
+}
+
+.fragemarkor {
+    padding-right: 1em;
+}
+
+.svarsmarkor {
+    padding-right: 1em;
+    margin: 1em;
+    float: left;
+}
+
+/*Personal*/
+/*Bilder på handläggare*/
+figure#personal {
+    border: 1px solid #CC7F4B;
+    padding: 1em;
+    margin: 1em;
+    width: 10%;
+    float: right;
+}
+
+/*Detaljsidan*/
+/*Sektioner för  utredning och anmälan.
+Ska ha två-kolumns-layout mha. floats för datorer.*/
+section#anmalan {
+    width: 45%;
+    float: left;
+}
+
+section#utredning {
+    width: 45%;
+    float: right;
+}
+
+/*Kontakt*/
+#kalender {
+    max-width: 1480px;
+    margin: 1em auto;
+}
+
+#kalender .intern-rubrik,.intern-rubrik {
+/*Används inuti element där headers är otillåtna, men där man för tydlighetens skull  använder en annan textfärg. 
+    Typsnittet ändras dock inte, för att passa in mer med texten i övrigt.*/
+    color: #015A01;
+    font-weight: 700;
+}
+
+/*Vanliga dagar i kalendern har subtilare färg, mot vit bakgrund.*/
+#kalender td {
+    color: #6B7F62;
+}
+
+/*Helgdagarna markeras med mörkare färg mot röd bakgrund.*/
+#kalender td.helgdag {
+    color: #015A01;
+    padding: 20px;
+    background-color: #FF8677;
+}
+
+/*Inloggning*/
+/*Stil som liknar formulärens för att skapa igenkänning.*/
+#captcha {
+    background-color: #c3bdb7;
+    color: #015A01;
+    border: solid 2px #FF8677;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 1.5em;
+    -webkit-box-shadow: 5px 5px 5px #998D84;
+    -moz-box-shadow: 5px 5px 5px #998D84;
+    box-shadow: 5px 5px 5px #998D84;
+}
+
+/* Media queries */
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*Samtliga sidor ska ha en kolumn och navigeringen syns som en lista istället för på en rad. */
+    nav ul li {
+        display: block;
+    }
+
+    /*Tabellen med ärenden ska visas med rubrikerna på rader istället för ovan kolumnerna. */
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font: bold 1.5em "PT Sans",sans-serif;
+        color: #015A01;
+    }
+
+    /*Slipp scrolla i sidled för att se hela tabellen */
+    table#rapportering {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /*Skapar mellanrum så att det blir enklare att se var en anmälan slutar och nästa börjar.*/
+    #content table#rapportering tr {
+        margin-bottom: 10%;
+    }
+
+    /*Mobilanpassning enligt föreläsning vecka 6 om stil för tabeller.*/
+    /* Force table to not be like tables anymore */
+    table,thead,tbody,th,td,tr {
+        display: block;
+    }
+
+    /*Hide table headers*/
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Tar bort två-kolumnslayouten */
+    section#anmalan {
+        width: 100%;
+        clear: both;
+    }
+
+    section#utredning {
+        width: 100%;
+        clear: both;
+    }
+
+    /*Fixar så att  texten i formulären blir lättare att se på små skärmar.*/
+    form p,textarea,label {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    /*Större knappar*/
+    .knapp {
+        font-size: 1em;
+        padding: 1.5em;
+    }
+
+    /*På de sidor där det finns bilder så ska de ligga nedanför innehållet. */
+    .bild {
+    /*position: absolute;*/
+    /*bottom: -640px;*/
+    /*display: none;*/
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*Bilden på handläggaren kändes ivägen på små skärmar*/
+    #personal {
+        display: none;
+    }
+
+    /*Få formulären att centreras*/
+    form {
+        margin: 0 auto;
+    }
+
+    /*Gör hela kontakt-informationen synlig*/
+    aside,aside dd img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-device-width : 481px) and (max-device-width : 720px) {
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    table#rapportering {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #content table#rapportering tr {
+        margin-bottom: 10%;
+    }
+
+    /*Enligt kraven för surfplattans layout: */
+    /*Detaljsidan för ärenden har två kolumner för detaljerna i ärendet medan hanteringsdelen ligger nedanför kolumnerna.*/
+    section#anmalan {
+        width: 50%;
+        float: left;
+    }
+
+    section#utredning {
+        width: 100%;
+        clear: both;
+    }
+
+    form p,textarea,input {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    #personal {
+        display: none;
+    }
+}
