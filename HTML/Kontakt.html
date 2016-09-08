@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link href="../CSS/design.css" media="screen" rel="stylesheet" type=
+    "text/css">
+    <!-- <link rel="stylesheet" href="../CSS/design_print.css" type="text/css" media="print"/> -->
+    <title>Kontakt</title>
+    <meta content="width = device-width, initial-scale = 1, maximum-scale=2"
+    name="viewport">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="../index.html"><img alt="kommunens logga" height="82"
+            id="logo" src="../Images/Icons/logo.png" title=
+            "Tillbaka till startsidan" width="64"></a> Kontakt</h1>
+        </header>
+        <nav>
+            <ul id="links">
+                <li class="link">
+                    <a href="../index.html" tabindex="0">Hem</a>
+                </li>
+                <li class="link">
+                    <a href="Tj%C3%A4nster.html" tabindex="1">Tjänster</a>
+                </li>
+                <li class="link">
+                    <a href="FAQ.html" tabindex="2">FAQ</a>
+                </li>
+                <li class="link">
+                    <a href="Kontakt.html" id="active" tabindex="3">Kontakt</a>
+                </li>
+                <li class="link">
+                    <a href="Inloggning.html" tabindex="4">Inloggning</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+        <h2>Öppettider:</h2>
+        <dl>
+            <dt class="intern-rubrik"><em>Mån-Fre:</em></dt>
+            <dd>kl.8-17</dd>
+            <dt class="intern-rubrik"><em>Lör-Sön:</em></dt>
+            <dd>kl.10-16</dd>
+        </dl>
+        <h3>Se kalender för avvikande öppettider:</h3>
+        <!-- kalender för avvikande öppettider, table används provisoriskt, layouten är tänkt att skapas med CSS senare eftersom table inte lämpar sig så bra i detta fall-->
+        <table id="kalender">
+            <thead>
+                <tr>
+                    <th>Sön</th>
+                    <th>Mån</th>
+                    <th>Tis</th>
+                    <th>Ons</th>
+                    <th>Tors</th>
+                    <th>Fre</th>
+                    <th>Lör</th>
+                </tr>
+            </thead>
+            <tr>
+                <th colspan="7"><b>Juni 2016</b></th>
+            </tr>
+            <tr>
+                <td class="intern-rubrik" colspan="7"><i>Röda rutor innebär
+                stängt</i></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td data-label="Ons">1</td>
+                <td data-label="Tors">2</td>
+                <td data-label="Fre">3</td>
+                <td data-label="Lör">4</td>
+            </tr>
+            <tr>
+                <td data-label="Sön">5</td>
+                <td class="helgdag" data-label="Mån">6</td>
+                <td data-label="Tis">7</td>
+                <td data-label="Ons">8</td>
+                <td data-label="Tors">9</td>
+                <td data-label="Fre">10</td>
+                <td data-label="Lör">11</td>
+            </tr>
+            <tr>
+                <td data-label="Sön">12</td>
+                <td data-label="Mån">13</td>
+                <td data-label="Tis">14</td>
+                <td data-label="Ons">15</td>
+                <td data-label="Tors">16</td>
+                <td data-label="Fre">17</td>
+                <td data-label="Lör">18</td>
+            </tr>
+            <tr>
+                <td data-label="Sön">19</td>
+                <td data-label="Mån">20</td>
+                <td data-label="Tis">21</td>
+                <td data-label="Ons">22</td>
+                <td data-label="Tors">23</td>
+                <td data-label="Fre">24</td>
+                <td class="helgdag" data-label="Lör">25</td>
+            </tr>
+            <tr>
+                <td data-label="Sön">26</td>
+                <td data-label="Mån">27</td>
+                <td data-label="Tis">28</td>
+                <td data-label="Ons">22</td>
+                <td data-label="Tors">29</td>
+                <td data-label="Fre">30</td>
+                <td></td>
+            </tr>
+        </table>
+        <aside>
+            <h3>Kontaktuppgifter:</h3>
+            <dl>
+                <dt><strong class="intern-rubrik">Besöksadress:</strong></dt>
+                <dd>Kommunhuset<br>
+                Centralvägen 1<br>
+                555 55 Småstad<br>
+                Sverige</dd>
+                <dt><strong class="intern-rubrik">Email:</strong></dt>
+                <dd>info@småstad.se</dd>
+                <dt><strong class="intern-rubrik">Telefon:</strong></dt>
+                <dd>+46 7517766491</dd>
+                <dt><strong class="intern-rubrik">Telefontider:</strong></dt>
+                <dd><em>Mån-Fre:</em> 7-20<br>
+                <em>Lör-Sön:</em> 8-18</dd>
+                <dt><strong class="intern-rubrik">Karta:</strong></dt>
+                <dd><img alt="karta småstad" class="bild" height="245" id=
+                "karta" src="../Images/Pictures/karta.png" width="250"></dd>
+            </dl>
+        </aside><img alt="bild ovanifrån Småstad" class="bild" height="162"
+        src="../Images/Pictures/pic_3.jpg" width="164"> <img alt=
+        "bild i utkanten av Småstad" class="bild" height="162" src=
+        "../Images/Pictures/pic_2.jpg" width="108"></div>
+        <footer>
+            <form action="mailinglist.php" method="post" target="_blank">
+                <fieldset>
+                    <legend><strong class="intern-rubrik">Prenumerera på
+                    nyhetsbrev:</strong></legend> <input name="email"
+                    placeholder="Ange din email address" required="" type=
+                    "text"> <input class="knapp" type="submit" value=
+                    "Prenumerera">
+                </fieldset>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link href="../CSS/design.css" media="screen" rel="stylesheet" type=
+    "text/css">
+    <!--<link rel="stylesheet" href="../CSS/design_print.css" type="text/css" media="print"/> -->
+    <title>Inloggad Handläggare</title>
+    <meta charset="UTF-8">
+    <meta content="width = device-width, initial-scale = 1, maximum-scale=2"
+    name="viewport">
+</head>
+<body>
+    <figure id="personal">
+        <img alt="Bild på handläggare Maria Aydi" height="162" src=
+        "../Images/Pictures/pic_4.jpg" width="108">
+        <figcaption>
+            Inloggad som: Maria Aydi
+        </figcaption>
+    </figure>
+    <div id="wrapper">
+        <header>
+            <h1><a href="../index.html"><img alt="kommunens logga" height="82"
+            id="logo" src="../Images/Icons/logo.png" title=
+            "Tillbaka till startsidan" width="64"></a> Inloggad
+            Handläggare</h1>
+        </header>
+        <nav>
+            <ul id="links">
+                <li class="link">
+                    <a href="../index.html" tabindex="0">Hem</a>
+                </li>
+                <li class="link">
+                    <a href="Tj%C3%A4nster.html" tabindex="1">Tjänster</a>
+                </li>
+                <li class="link">
+                    <a href="FAQ.html" tabindex="2">FAQ</a>
+                </li>
+                <li class="link">
+                    <a href="Kontakt.html" tabindex="3">Kontakt</a>
+                </li>
+                <li class="link">
+                    <a href="Inloggning.html" tabindex="4">Inloggning</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <table id="rapportering">
+                <caption>
+                    Rapportering
+                </caption>
+                <thead>
+                    <tr>
+                        <th class="intern-rubrik" scope="col">Datum för
+                        anmälan</th><!-- scope attributet räcker i denna inte-så-komplexa tabell, istället för id och headers som associerar kolumnens rubrik innehållet i dess celler för olika screen-readers-->
+                        <th scope="col">Ärendenummer</th>
+                        <th scope="col">Miljöbrott</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Avdelning</th>
+                        <th scope="col">Handläggare</th>
+                        <th scope="col">Anmälare</th>
+                        <th colspan="2" scope="col">Anmälarens
+                        kontaktuppgifter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Datum för anmälan">2016-05-04</td>
+                        <td data-label="Ärendenummer">
+                            <a href="Detaljsida.html">2016-45-0206</a>
+                        </td>
+                        <td data-label="Miljöbrott">Vandalisering</td>
+                        <td data-label="Status">Inrapporterad</td>
+                        <td data-label="Avdelning">Etiska</td>
+                        <td data-label="Handläggare">Maria Aydi</td>
+                        <td data-label="Anmälare">Bengt Cederström</td>
+                        <td data-label="Anmälarens telefonnummer">+46 70 123
+                        4566</td>
+                        <td data-label="Anmälarens email">
+                        Bengan55@dinmail.se</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Datum för anmälan">2016-05-03</td>
+                        <td data-label="Ärendenummer">
+                            <a href="Detaljsida.html">2016-45-0205</a>
+                        </td>
+                        <td data-label="Miljöbrott">Nedskräpning</td>
+                        <td data-label="Status">Pågående</td>
+                        <td data-label="Avdelning">Sanitet</td>
+                        <td data-label="Handläggare">Natasha Brandt</td>
+                        <td data-label="Anmälare">Annelie Kreutz</td>
+                        <td data-label="Anmälarens telefonnummer">+ 46 70 789
+                        3455</td>
+                        <td data-label="Anmälarens email">Annie@dinmail.se</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Datum för anmälan">2016-05-02</td>
+                        <td data-label="Ärendenummer">
+                            <a href="Detaljsida.html">2016-45-0202</a>
+                        </td>
+                        <td data-label="Miljöbrott">Avloppsblockering</td>
+                        <td data-label="Status">Avslutad</td>
+                        <td data-label="Avdelning">Tekniska</td>
+                        <td data-label="Handläggare">Calle Rejbrand</td>
+                        <td data-label="Anmälare">Jacob Steiner</td>
+                        <td data-label="Anmälarens telefonnummer">+46 70 456
+                        1233</td>
+                        <td data-label="Anmälarens email">
+                        Jackster@dinmail.se</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

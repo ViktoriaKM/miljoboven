@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link href="../CSS/design.css" media="screen" rel="stylesheet" type=
+    "text/css">
+    <!-- <link rel="stylesheet" href="../CSS/design_print.css" type="text/css" media="print"/> -->
+    <title>Inloggning</title>
+    <meta content="width = device-width, initial-scale = 1, maximum-scale=2"
+    name="viewport">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1><a href="../index.html"><img alt="kommunens logga" height="82" id=
+        "logo" src="../Images/Icons/logo.png" title="Tillbaka till startsidan"
+        width="64"></a> Inloggning</h1>
+    </header>
+    <nav>
+        <ul id="links">
+            <li class="link">
+                <a href="../index.html" tabindex="0">Hem</a>
+            </li>
+            <li class="link">
+                <a href="Tj%C3%A4nster.html" tabindex="1">Tjänster</a>
+            </li>
+            <li class="link">
+                <a href="FAQ.html" tabindex="2">FAQ</a>
+            </li>
+            <li class="link">
+                <a href="Kontakt.html" tabindex="3">Kontakt</a>
+            </li>
+            <li class="link">
+                <a href="Inloggning.html" id="active" tabindex=
+                "4">Inloggning</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <form action="InloggadHandl%C3%A4ggare.html" method="post">
+            <fieldset>
+                <label for="Login">*Användarnamn:</label> <input id="Login"
+                maxlength="35" name="username" placeholder="Användarnamn" size=
+                "35" tabindex="5" type="text"><br>
+                <br>
+                <label for="Password">*Lösenord:</label> <input id="Password"
+                maxlength="35" name="password" placeholder="Lösenord" size="35"
+                tabindex="6" type="password"><br>
+                <br>
+                <input class="knapp" tabindex="2" type="submit" value=
+                "Logga in">
+            </fieldset>
+        </form>
+    </div><img alt="captcha" id="captcha" src=
+    "../Images/Pictures/captcha.png"></div>
+</body>
+</html>
